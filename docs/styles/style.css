@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap"); /* Import av fonten som används */
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Gör så att paddingen är inuti elementet istället för utanpå */
 
-  font-family: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif; /* Font familjen jag använder */
 }
 
 body {
-  background-color: rgb(25, 25, 25);
-  color: white;
+  background-color: rgb(25, 25, 25); /* Bakgrundsfärgen på hemsidan/bodyn */
+  color: white; /* Färgen på texten */
 
-  margin: 0;
+  margin: 0; /* Sätter margin på body 0 då default är att bodyn har en margin */
 }
 
 h1,
@@ -22,227 +22,226 @@ h6,
 ul,
 li,
 a {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Sätter 0 margin för att h1 osv har en förinställd margin */
+  padding: 0; /* Samma här för att få de olika att fungera som div */
 
-  text-decoration: none;
-  list-style-type: none;
+  text-decoration: none; /* Stänger av understruket under a länkarna */
+  list-style-type: none; /* Använder inte ul och li men den stänger av dotsen på li */
 }
 
 .main-layout {
-  min-height: 100vh;
+  min-height: 100vh; /* Dessa är är viewport height och gör att main layouten alltid fyller skärmen */
   min-height: 100dvh;
 }
 
 a {
-  color: white;
+  color: white; /* Att mina länkar ska vara vita och inte default lila */
 }
 
 a:hover {
-  color: rgb(143, 143, 143);
-  transition: ease-in-out 0.3s;
+  color: rgb(143, 143, 143); /* Text färgen på hover över länkar */
+  transition: ease-in-out 0.3s; /* Hur mjukt och snabbt länk färgen ska dyka upp */
 }
 
 .header-container {
-  margin-left: 4rem;
+  margin-left: 4rem; /* Här är lite justeringar om vart på sidan mitt header content startar */
   margin-top: 2rem;
   margin-right: 4rem;
 }
 
 .main-heading {
-  font-size: 3rem;
+  font-size: 3rem; /* Text storlek */
 }
 
 .nav-container {
-  display: flex;
+  display: flex; /* Display flex som gör att min navbar är horisontell */
 
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 2rem; /* gapet mellan mina olika nav-items */
+  margin-top: 2rem; /* gapet mellan main-headingen och nav items */
 }
 
 .nav-item {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.5rem; /* Text storlek */
+  font-weight: bold; /* Text vikt/tjocklek */
 }
 
 .main-container {
-  margin: 4rem;
-  margin-top: 8rem;
-  max-width: 60%;
+  margin: 4rem; /* Justering vart min main text ska vara placerad */
+  margin-top: 8rem; /* 8 rem dvs 16px x 8 bort ifrån min nav-containerr */
+  max-width: 60%; /* En max-width på 60% då jag inte vill att texten ska täcka hela sidan */
 }
 
 .main-content-text {
-  font-size: 4rem;
+  font-size: 4rem; /* Text storlek */
 
-  transform: scale(0.94);
-  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  transform: scale(0.94); /* Animation */
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1); /* Animation */
 }
 
 @keyframes scale {
   100% {
-    transform: scale(1);
+    transform: scale(1); /* Animation */
   }
 }
 
 span {
-  display: inline-block;
-  opacity: 0;
-  filter: blur(4px);
+  display: inline-block; /* Animation */
+  opacity: 0; /* Animation */
+  filter: blur(4px); /* Animation */
 }
 
+/* Krävs mer span childs med olika sekunder desto mer text */
+
 span:nth-child(1) {
-  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0); /* Animation */
 }
 
 span:nth-child(2) {
-  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0); /* Animation */
 }
 
 span:nth-child(3) {
-  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0); /* Animation */
 }
 
 span:nth-child(4) {
-  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0); /* Animation */
 }
 
 span:nth-child(5) {
-  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0); /* Animation */
 }
 
 span:nth-child(6) {
-  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0); /* Animation */
 }
 
 span:nth-child(7) {
-  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0); /* Animation */
 }
 
 span:nth-child(8) {
-  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0); /* Animation */
 }
 
 span:nth-child(9) {
-  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0); /* Animation */
 }
 
 span:nth-child(10) {
-  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0); /* Animation */
 }
 
 span:nth-child(11) {
-  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0); /* Animation */
 }
 
 
 @keyframes fade-in {
   100% {
-    opacity: 1;
-    filter: blur(0);
+    opacity: 1; /* Animation */
+    filter: blur(0); /* Animation */
   }
 }
 
 .grid-heading {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2rem; /* Text storlek */
+  font-weight: bold; /* Text tjocklek  */
 
-  margin-bottom: 2rem;
-  margin-left: 4rem;
+  margin-bottom: 2rem; /* Hur långt över min grid scroll texten ska vara */
+  margin-left: 4rem; /* marginen vänster för att justera grid headingen så den matchar gridens padding inline */
 }
 
 .main-scroll-grid {
-  margin-top: 8rem;
+  margin-top: 8rem; /* Hur långt nerifrån main-content grid container ska vara */
 }
 
 .grid-container {
-  padding-bottom: 4rem;
+  padding-bottom: 4rem; /* Hur långt ifrån botten grid containern ska vara */
 
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 45%;
-  grid-column-gap: 2rem;
+  display: grid; /* Display att det är en grid */
+  grid-auto-flow: column; /* Radar upp mina cards i en column och fortsätter jag lägga till nya cards så hamnar dom i en overflow */
+  grid-auto-columns: 45%; /* Hur mycket av mina cards jag vill visa på sidan har 45% då jag vill att man ska se att något mer finns där att scrolla för*/
+  grid-column-gap: 2rem; /* Gapet mellan cardsen */
 
-  overflow-x: scroll;
-  scroll-snap-type: mandatory;
-  scroll-padding: 2rem;
-  padding-inline: 4rem;
+  overflow-x: scroll; /* Vid overflow så har jag valt scroll dvs för att se overflowen av cards så behöver du scrolla */
+  scroll-snap-type: mandatory; /* Hur srcollen ska bete sig, med mandatory så snapar den till och rättar sig */
+  scroll-padding: 2rem; /* Scrollen ska ha samma glipa vid scrollen som gapet */
+  padding-inline: 4rem; /* Hur långt in på sidan griden ska börja, här tog jag en padding-inline då den funkade bättre med min overflow grid  */
 }
 
 .grid-container > * {
-  scroll-snap-align: start;
+  scroll-snap-align: start; /* Så scrollen ställer in sig rätt mestadels för mobil */
 }
 
 .grid-card {
-  background-color: #1d1d1d;
+  background-color: #1d1d1d; /* Backgrundsfärg på grid cardet */
 
-  width: 100%;
-  height: 300px;
+  height: 300px; /* En fixad höjd (egentligen något man inte bör göra) */
+  width: 100%;  /* Oklart varför jag har den här men vi låter den vara kvar, den har ingen funktion hehe */
 
-  border-radius: 10px;
+  border-radius: 10px; /* Rundade kanter på cardet */
 
-  display: grid;
-  justify-items: start;
-  align-items: center;
-  word-break: break-word;
+  display: grid; /* Vill att innehållet i cardet placeras som en grid */
+  justify-items: start; /* Justerar innehållet i center av cardet */
+  align-items: center;  /* Justerar innehållet i center av cardet */
+  word-break: break-word; /* Tillåter ord i cardet att brytas vid förminskning */
 
-  padding: 3rem;
+  padding: 3rem; /* Vart i kortet texten ska placeras */
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2rem; /* Text Storlek */
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Text Storlek */
 }
 
 .project-text {
-  font-size: 3rem;
+  font-size: 3rem; /* Text Storlek */
 }
 
 img {
-  display: grid;
-  width: 100%;
-  height: 10em;
-  grid-auto-flow: column;
-  object-fit: contain;
-  border-radius: 10px;
+  width: 100%; /* Den ska fylla ut bredden i kortet */
+  height: 10em; /* en fixad höjd på bilderna */
+  object-fit: contain; /* så att bilden alltid stannar i cardet och anpassar sig efter förminskning */
 }
 
 
-@media (max-width: 919px) {
+@media (max-width: 919px) { /* Media Queries, jag berättar för den vad den ska göra vid vissa pixlar */
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Förminskning av fontstorlek */
   }
 
   .main-content-text {
-    font-size: 3rem;
+    font-size: 3rem; /* Förminskning av fontstorlek */
   }
 
   .project-text {
-    font-size: 2rem;
+    font-size: 2rem; /* Förminskning av fontstorlek */
   }
 }
 
 @media (max-width: 729px) {
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Förminskning av fontstorlek */
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1rem; /* Förminskning av fontstorlek */
   }
 
   .main-content-text {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Förminskning av fontstorlek */
   }
 
   .main-heading {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Förminskning av fontstorlek */
   }
 
   .project-text {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Förminskning av fontstorlek */
   }
 }
 
@@ -256,10 +255,10 @@ img {
   }
 
   .grid-container {
-    grid-auto-columns: 100%;
+    grid-auto-columns: 100%; /* Här gör jag att min grid enbart visar ett kort istället för två , och detta gör att vid en viss pixel att korten slår ihop snyggt */
   }
   .main-content-text {
-    font-size: 2rem;
+    font-size: 2rem; 
   }
 
   .grid-heading {
@@ -271,15 +270,15 @@ img {
   }
 
   .header-container {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: grid; /* Justerar så att texten hamnar i mitten av sidan */
+    justify-content: center; /* Justerar så att texten hamnar i mitten av sidan */
+    align-items: center; /* Justerar så att texten hamnar i mitten av sidan */
+    text-align: center; /* Justerar så att texten hamnar i mitten av sidan */
   }
 
   .main-container {
-    text-align: center;
-    max-width: 100%;
+    text-align: center; /* Justerar så att texten hamnar i mitten av sidan */
+    max-width: 100%; /* Ändrar max widthen så att det hamnar i mitten */
   }
 
   .project-text {

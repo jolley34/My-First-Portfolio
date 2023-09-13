@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" /> <!-- för att alla tecken ska kunna användas och läsas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- används för en responsiv sida -->
 
-    <link rel="stylesheet" href="/docs/styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="/docs/styles/style.css" /> <!-- länk till min css fil -->
 
-    <title>joelerlandsson</title>
+    <title>joelerlandsson</title> <!-- titel på sidan -->
   </head>
   <body>
-    <div class="main-layout">
+    <div class="main-layout"> <!-- en klass som wrapar ihop hela innehållet, används mest för min vh i css -->
       <header>
-        <div class="header-container">
+        <div class="header-container"> <!-- containern till alla mina header objekt -->
           <a href="/docs/index.html">
-            <div class="main-heading">joelerlandsson.</div>
+            <div class="main-heading">joelerlandsson.</div> <!-- main titeln på sidan -->
           </a>
 
-          <div class="nav-container">
+          <div class="nav-container"> <!-- containern för mina nav länkar -->
             <a href="/docs/skills.html">
-              <div class="nav-item">Skills</div>
+              <div class="nav-item">Skills</div> <!-- nav länk -->
             </a>
             <a href="/docs/project.html">
-              <div class="nav-item">Project</div>
+              <div class="nav-item">Project</div> <!-- nav länk -->
             </a>
             <a href="/docs/socials.html">
-              <div class="nav-item">Socials</div>
+              <div class="nav-item">Socials</div> <!-- nav länk -->
             </a>
           </div>
         </div>
       </header>
       <main>
-        <div class="main-container">
-          <div class="main-content-text">
-            <span>I</span>
-            <span>am</span>
+        <div class="main-container"> <!-- container till huvud content dvs i detta fall texten i mitten av sidan -->
+          <div class="main-content-text"> <!-- main texten -->
+            <span>I</span> <!-- en span som krävs för min animation att fungera, delat upp varje ord i varsin span för olika delay på varje ord att dyka upp -->
+            <span>am</span> 
             <span>a</span>
             <span>Front-End</span>
             <span>Developer</span>
@@ -45,41 +41,41 @@
 
             <span
               ><a href="https://medieinstitutet.se/" target="_blank"
-                >@medieinstitutet.</a
+                >@medieinstitutet.</a> <!-- en länk på sista ordet i meningen -->
               ></span
             >
           </div>
         </div>
 
-        <section class="main-scroll-grid">
-          <div class="grid-heading">Experience</div>
-          <div class="grid-container">
-            <a href="https://www.nexans.se/sv/" target="_blank">
-              <div class="grid-card">
-                <h1>Nexans AB</h1>
-                <h1>Machine Operator</h1>
-                <h2>2013 - 2018</h2>
+        <section class="main-scroll-grid"> <!-- gjorde en section för grid systemet -->
+          <div class="grid-heading">Experience</div> <!-- texten ovanför griden -->
+          <div class="grid-container"> <!-- container till mina grid cards -->
+            <a href="https://www.nexans.se/sv/" target="_blank"> <!-- länk till hemsida , använder target blank då jag vill att den öppnas i ett nytt fönster! -->
+              <div class="grid-card"> <!-- grid card -->
+                <h1>Nexans AB</h1> <!-- text inuti grid cardet -->
+                <h1>Machine Operator</h1> <!-- text inuti grid cardet -->
+                <h2>2013 - 2018</h2> <!-- text inuti grid cardet -->
               </div>
             </a>
             <a href="https://www.rethermkruge.se/" target="_blank">
               <div class="grid-card">
-                <h1>Retherm Kruge</h1>
-                <h1>Warehouse Worker</h1>
-                <h2>2019 - 2023</h2>
+                <h1>Retherm Kruge</h1> <!-- text inuti grid cardet -->
+                <h1>Warehouse Worker</h1> <!-- text inuti grid cardet -->
+                <h2>2019 - 2023</h2> <!-- text inuti grid cardet -->
               </div>
             </a>
-            <a href="https://medieinstitutet.se/" target="_blank">
-              <div class="grid-card">
-                <h1>Medieinstitutet</h1>
-                <h1>Front-End Student</h1>
-                <h2>2023 - 2025</h2>
+            <a href="https://medieinstitutet.se/" target="_blank"> 
+              <div class="grid-card"> <!-- grid card -->
+                <h1>Medieinstitutet</h1> <!-- text inuti grid cardet -->
+                <h1>Front-End Student</h1> <!-- text inuti grid cardet -->
+                <h2>2023 - 2025</h2> <!-- text inuti grid cardet -->
               </div>
             </a>
             <a href="https://www.linkedin.com/in/joel-erlandsson-32500328a/" target="_blank">
-              <div class="grid-card">
-                <h1>Future Work</h1>
-                <h1>Front-End Developer</h1>
-                <h2>2025 - Unknown</h2>
+              <div class="grid-card"> <!-- grid card -->
+                <h1>Future Work</h1> <!-- text inuti grid cardet -->
+                <h1>Front-End Developer</h1> <!-- text inuti grid cardet -->
+                <h2>2025 - Unknown</h2> <!-- text inuti grid cardet -->
               </div>
             </a>
           </div>
