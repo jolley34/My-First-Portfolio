@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-  color: rgb(53, 53, 53);
+  color: rgb(143, 143, 143);
   transition: ease-in-out 0.3s;
 }
 
