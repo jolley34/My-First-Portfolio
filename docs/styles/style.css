@@ -208,7 +208,6 @@ img {
   object-fit: contain; /* så att bilden alltid stannar i cardet och anpassar sig efter förminskning */
 }
 
-
 @media (max-width: 919px) { /* Media Queries, jag berättar för den vad den ska göra vid vissa pixlar */
   h1 {
     font-size: 1.5rem; /* Förminskning av fontstorlek */
